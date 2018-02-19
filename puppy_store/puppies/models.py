@@ -18,5 +18,8 @@ class Puppy(models.Model):
     def get_breed(self):
         return self.name + ' belongs to ' + self.breed + ' breed.'
 
+    def get_color(self):
+        return self.name + 'is of ' + self.color + ' color.'
+
     def __repr__(self):
         return self.name + ' is added.'
